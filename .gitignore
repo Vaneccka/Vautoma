@@ -1,0 +1,40 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Editor configs
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log and debug
+*.log
+
+# Flask/Gradio/TensorFlow cache or output
+instance/
+*.sqlite3
+*.db
+*.h5
+
+# Static build or cache
+static/cache/
+static/files/
+*.map
+
+# Node modules (if used)
+node_modules/
+
+# Python environment files
+.env
+.env.*
