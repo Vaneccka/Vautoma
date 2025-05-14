@@ -68,7 +68,7 @@ async def send_openai_request(prompt: str, api_key: str) -> str:
 
                 data = json.loads(response_text)
                 if "choices" in data and len(data["choices"]) > 0:
-                    return data["choices"][0]["message"]["content"]
+                    return data["choices"][0]["message"]["content"].replace("#", "").replace("**", "").replace("- **", "")
                 else:
                     return f"⚠️ Неправильный формат ответа: {data}"
     except Exception as e:
